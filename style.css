@@ -4,25 +4,47 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --branco: #fff;
     --marrom: #674B3C;
     --preto: #000;
     --bege: #FEF9F3;
     --fundo-site: #FEF9F3;
     --animaca-menu: #C7571B;
+    --bege-escuro: #B89988;
 }
 
 
-body{
+/* ---------TIPOGRAFIA---------- */
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Recursive;
+    src: url(./fonts/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplay;
+    src: url(./fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+body {
     background-color: var(--fundo-site);
 }
 
 /* HEARDER */
 
-header{
+header {
     width: 100%;
-    
+
 }
 
 
@@ -44,49 +66,130 @@ header{
 
 
 
-header>div.container-flex{
+header>div.container-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 245px;
-    
+
 
 }
 
-.container-flex{
+.container-flex {
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-#logo{
+#logo {
     width: 118px;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.links a{
+.links a {
     font-size: 25px;
     color: var(--preto);
     font-family: inter;
     text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--animaca-menu);
 }
 
+
+
 #icone-barras,
 #icone-x,
-#menu_botao{
+#menu_botao {
     display: none;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* BANNER 01 */
+.hero-section {
+    background-image: url(./imgs/banner\ 1.png);
+    background-size: cover;
+    height: 85vh;
+}
+
+/* -----------PESQUISA---------- */
+.caixa-pesquisa {
+    width: 55%;
+    height: 207px;
+    margin: 0 auto;
+    margin-top: -40px;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.20);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.icon {
+    font-size: 18px;
+
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    color: #674B3C;
+    font-family: Inter;
+
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #000;
+    margin: 0;
+    font-family: Recursive;
+
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 14px;
+    color: #444;
 }
 
 
+.search-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #4c3d31;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn:hover{
+    color: var(--bege-escuro);
+}
 
