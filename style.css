@@ -1,0 +1,92 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --branco: #fff;
+    --marrom: #674B3C;
+    --preto: #000;
+    --bege: #FEF9F3;
+    --fundo-site: #FEF9F3;
+    --animaca-menu: #C7571B;
+}
+
+
+body{
+    background-color: var(--fundo-site);
+}
+
+/* HEARDER */
+
+header{
+    width: 100%;
+    
+}
+
+
+/* Faixa preta no topo */
+.top-banner {
+    width: 100%;
+    height: 25px;
+    background-color: #674B3C;
+    color: #FEF9F3;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Recursive", mono-linear;
+}
+
+
+
+header>div.container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 245px;
+    
+
+}
+
+.container-flex{
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 118px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a{
+    font-size: 25px;
+    color: var(--preto);
+    font-family: inter;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--animaca-menu);
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao{
+    display: none;
+   display: flex;
+   justify-content: center;
+}
+
+
+
