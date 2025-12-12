@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div id="sombra"></div>
     <header>
 
         <div class="top-banner">
@@ -23,12 +24,13 @@
             <nav id="menu" class="links">
                 <a href="#home">Home</a>
                 <a href="#sobre-nos">Sobre nós</a>
-                <a href="#colecoes">Coleções</a>
+                <a href="#categorias">Coleções</a>
                 <a href="#impacto">Impacto</a>
                 <a href="#empresa">Empresa</a>
             </nav>
 
-            <button id="menu_botao" type="button">
+            <!-- Menu de Hamburguer-->
+            <button id="menu_botao" onclick="abreFechaMenu()">
                 <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                     <path
                         d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
@@ -39,47 +41,64 @@
                         d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
                 </svg>
             </button>
+
+            <div class="header-icons">
+                <img src="./imgs/bag-dash 1.svg" alt="shop">
+                <img src="./imgs/heart 1.svg" alt="favoritos">
+                <img src="./imgs/person 1.svg" alt="perfil">
+            </div>
+
+            <!-- <button id="menu_botao" type="button">
+                <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                </svg>
+
+                <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                </svg>
+            </button> -->
         </div>
 
+    </header>
 
-        <!-- <a href="#" class="banner-btn">CONFIRA</a> -->
+   
+    <section id="home" class="hero-section">
+        <div class="hero-section"></div>
+    </section>
 
-        <section class="hero-section">
-            <div class="hero-section">
+  
+    <div class="caixa-pesquisa">
+
+        <div class="option">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suitcase-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z" />
+            </svg>
+            <div class="texts">
+                <p class="title">Peças</p>
+                <p class="subtitle">Selecione suas peças</p>
             </div>
-        </section>
+            <span class="arrow">⌄</span>
+        </div>
 
-        <div class="caixa-pesquisa">
-
-            <div class="option">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-suitcase-lg" viewBox="0 0 16 16">
-                    <path
-                        d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z" />
-                </svg>
-                <div class="texts">
-                    <p class="title">Peças</p>
-                    <p class="subtitle">Selecione suas peças</p>
-                </div>
-                <span class="arrow">⌄</span>
+        <div class="option">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+            </svg>
+            <div class="texts">
+                <p class="title">Categoria</p>
+                <p class="subtitle">Selecione a Categoria</p>
             </div>
+            <span class="arrow">⌄</span>
+        </div>
 
-
-            <div class="option">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-bookmark" viewBox="0 0 16 16">
-                    <path
-                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
-                </svg>
-                <div class="texts">
-                    <p class="title">Categoria</p>
-                    <p class="subtitle">Selecione a Categoria</p>
-                </div>
-                <span class="arrow">⌄</span>
-            </div>
-
-            <div class="option">
-                <svg xmlns ="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
+           <div class="option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
                     viewBox="0 0 16 16">
                     <path
                         d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
@@ -100,13 +119,143 @@
 
         </div>
 
+    <div class="titulo-sobre-nos">
+        <h2>Sobre Nós</h2>
+    </div>
 
+    <section id="sobre-nos">
+        <img src="./imgs/Essência da Periferia (Foto5) (2) 1.jpg" alt="foto sobre nós">
 
+        <p>
+            Somos uma marca de jóias e acessórios recém-fundada que une elegância,
+            autenticidade e estilo em cada detalhe. Nossas peças são pensadas para
+            valorizar a beleza individual e acompanhar você em todos os momentos.
+        </p>
+    </section>
 
-    </header>
+    <section id="parallax"></section>
 
-    <main>
-    </main>
+    <section id="categorias" class="container-flex">
+        <div class="titulo-categorias">
+            <h2>Nossas Categorias</h2>
+        </div>
+
+        <div class="top-buttons">
+            <button class="btn-nav"><span>←</span></button>
+            <button class="btn-nav"><span>→</span></button>
+        </div>
+
+        <div class="cards-categorias">
+            <div class="card"><img src="./imgs/categoria01.jpg" alt=""></div>
+            <div class="card"><img src="./imgs/categoria02.jpg" alt=""></div>
+            <div class="card"><img src="./imgs/categoria03.jpg" alt=""></div>
+            <div class="card"><img src="./imgs/categoria04.jpg" alt=""></div>
+            <div class="card"><img src="./imgs/categoria05.jpg" alt=""></div>
+            <div class="card"><img src="./imgs/categoria06.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section id="impacto" class="banner-promocao">
+        <div class="banner-promocao"></div>
+    </section>
+
+    
+    <section id="empresa" class="info-cards">
+
+        <div class="info-card">
+            <div class="colaboradores">
+                <img src="./imgs/Ellipse 30 (2).svg" alt="">
+                <img src="./imgs/Ellipse 31 (1).svg" alt="">
+                <img src="./imgs/Ellipse 32 (1).svg" alt="">
+            </div>
+            <h2>Nossos Colaboradores</h2>
+            <p class="cards-texto">Conheça nossos motivadores</p>
+            <a href="#" class="btn-info">SAIBA MAIS</a>
+        </div>
+
+        <div class="info-card">
+            <div class="icon-circulo">
+                <img src="./imgs/truck 1.svg" alt="">
+            </div>
+            <h2>Entrega e Devolução</h2>
+            <p class="cards-texto">Embalagens da melhor qualidade para você</p>
+            <a href="#" class="btn-info">SAIBA MAIS</a>
+        </div>
+
+        <div class="info-card">
+            <div class="icon-circulo">
+                <img src="./imgs/box-seam 1.svg" alt="">
+            </div>
+            <h2>Embalagens para joias</h2>
+            <p class="cards-texto">Garantimos a confiança com nossos clientes</p>
+            <a href="#" class="btn-info">SAIBA MAIS</a>
+        </div>
+
+    </section>
+
+    <section class="customer-review-section">
+        <div class="customer-review-banner">
+            <img src="./imgs/Banner 4.png" alt="Customer Review ">
+        </div>
+    </section>
+
+    
+    <footer>
+
+        <div class="rodape">
+                <div class="info-item">
+                    <img src="./imgs/send 1.svg" alt="">
+                    <p>Frete grátis em compras acima<br>de R$ 200</p>
+                </div>
+
+                <div class="info-item">
+                    <img src="./imgs/telephone 1.svg" alt="">
+                    <p>Precisa de ajuda?<br>Conecte-se usando nosso chat</p>
+                </div>
+
+                <div class="info-item">
+                    <img src="./imgs/x-diamond 1.svg" alt="">
+                    <p>Pague com Pix<br>Fácil, rápido e seguro</p>
+                </div>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-info">
+                <h3>Visite nossa loja</h3>
+                <p>Rua Niterói, 180 - Centro,<br>São Caetano do Sul - SP,<br>09510-200</p>
+
+                <h3>Nossos Horários</h3>
+                <p>Segunda a Sábado: 9:00 - 18:00<br>Domingo: Fechado</p>
+            </div>
+
+            <div class="footer-logo">
+                <img src="./imgs/Ativo 1 1 (1).svg" alt="Serena Joias">
+            </div>
+
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p><strong>Email:</strong><br> serenajoias01@gmail.com</p>
+                <p><strong>Telefone:</strong><br> +55 11 12345 6789</p>
+            </div>
+
+        </div>
+
+        <div class="footer-rodape">
+            <div class="footer-rodape-info">
+                <p><strong>SERENA JOIAS - TODOS OS DIREITOS RESERVADOS.</strong></p>
+                <p>Mboom Pontocom LTDA<br>CNPJ: XX.XXX.XXX/XXXX-XX</p>
+            </div>
+
+            <div class="footer-social">
+                <img src="./imgs/instagram (2) 1.svg" alt="">
+                <img src="imgs/whatsapp (1) 1.svg" alt="">
+                <img src="imgs/facebook (1) 1.svg" alt="">
+            </div>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
